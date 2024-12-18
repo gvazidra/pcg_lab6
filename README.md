@@ -1,1 +1,1 @@
-# pcg_lab6
+https://gvazidra.github.io/pcg_lab6/
