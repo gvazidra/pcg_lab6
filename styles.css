@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#main-container {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+#container {
+    flex: 3;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#projections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 220px;
+    background-color: #f8f8f8;
+}
+
+.projection {
+    flex: 1;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#axis-description {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+
+#axis-description span {
+    font-size: 16px;
+}
+
+#axis-description span:nth-child(1) { color: red; }
+#axis-description span:nth-child(2) { color: green; }
+#axis-description span:nth-child(3) { color: blue; }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4794;
+}

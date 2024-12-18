@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Буква Ч с Проекциями</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main-container">
+    <div id="container"></div>
+    <div id="projections">
+        <div class="projection" id="oxy">
+            <div class="label">XY Проекция</div>
+        </div>
+        <div class="projection" id="oxz">
+            <div class="label">XZ Проекция</div>
+        </div>
+        <div class="projection" id="oyz">
+            <div class="label">YZ Проекция</div>
+        </div>
+    </div>
+</div>
+<div id="controls">
+    <div id="axis-description">
+        <span style="color: red; font-weight: bold;">X</span>
+        <span style="color: green; font-weight: bold;">Y</span>
+        <span style="color: blue; font-weight: bold;">Z</span>
+    </div>
+    <button id="switch">Переключить на перемещение</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
